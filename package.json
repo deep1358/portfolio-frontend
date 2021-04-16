@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "start-dev": "cross-env NODE_ENV=production node index.js",
     "dev-debugg": "cross-env NODE_OPTIONS='--inspect' next dev"
   },
   "dependencies": {
