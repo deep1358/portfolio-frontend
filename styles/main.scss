@@ -1,0 +1,49 @@
+@import "./shared/index";
+@import "./components/header";
+@import "./portfolios";
+@import "./dashboard";
+@import "./about";
+@import "./portfolio-detail";
+
+.absolute {
+  position: absolute;
+}
+
+html,
+body {
+  font-family: "Montserrat", "Helvetica";
+  width: 100%;
+  height: 100%;
+}
+
+.self-typed {
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.base-page {
+  padding: 150px 0;
+  padding-top: 150px;
+  color: black;
+  background-color: #ecedee;
+  min-height: 100vh;
+  .page-header-title {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+}
+.clickable {
+  cursor: pointer;
+}
+.avatar-box {
+  img {
+    height: 50px;
+    border-radius: 50%;
+  }
+  .subtitle {
+    font-size: 14px;
+  }
+}
