@@ -20,26 +20,34 @@ const portfolio = ({ portfolio }) => {
         <div className="portfolio-detail">
           <div className="cover-container d-flex h-100 p-3 mx-auto flex-column">
             <main role="main" className="inner page-cover">
-              <h1 className="cover-heading">{portfolio.title}</h1>
-              <p className="lead dates">
-                {moment(portfolio.startDate).format("LL")} -
-                {portfolio.endDate
-                  ? moment(portfolio.endDate).format("LL")
-                  : "Present"}
-              </p>
-              <p className="lead info mb-0">
-                {portfolio.jobTitle} | {portfolio.company} |{portfolio.location}
-              </p>
-              <p className="lead">{portfolio.description}</p>
-              <p className="lead">
-                <a
-                  href={portfolio.companyWebsite}
-                  target="_blank"
-                  className="btn btn-lg btn-secondary"
-                >
-                  Visit Company
-                </a>
-              </p>
+              {router.isFallback && (
+                <h1 className="cover-heading">Your page is getting served..</h1>
+              )}
+              {!router.isFallback && (
+                <>
+                  <h1 className="cover-heading">{portfolio.title}</h1>
+                  <p className="lead dates">
+                    {moment(portfolio.startDate).format("LL")} -
+                    {portfolio.endDate
+                      ? moment(portfolio.endDate).format("LL")
+                      : "Present"}
+                  </p>
+                  <p className="lead info mb-0">
+                    {portfolio.jobTitle} | {portfolio.company} |
+                    {portfolio.location}
+                  </p>
+                  <p className="lead">{portfolio.description}</p>
+                  <p className="lead">
+                    <a
+                      href={portfolio.companyWebsite}
+                      target="_blank"
+                      className="btn btn-lg btn-secondary"
+                    >
+                      Visit Company
+                    </a>
+                  </p>
+                </>
+              )}
             </main>
           </div>
         </div>
@@ -70,7 +78,7 @@ export const getStaticPaths = async () => {
       params: { id: portfolio._id },
     };
   });
-  return { paths, fallback: false };
+  return { paths, fallback: true };
 };
 
 export const getStaticProps = async ({ params }) => {
@@ -81,6 +89,6 @@ export const getStaticProps = async ({ params }) => {
     props: {
       portfolio,
     },
-    revalidate:1
+    revalidate: 1,
   };
 };
