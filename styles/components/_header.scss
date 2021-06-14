@@ -62,3 +62,8 @@
 .port-navbar.transparent.is-close {
   transition: 1s;
 }
+@media (max-width: 340px) {
+  .port-navbar.port-default {
+    padding: 1rem !important;
+  }
+}

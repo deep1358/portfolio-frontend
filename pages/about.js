@@ -37,10 +37,17 @@ const About = () => {
           </Col>
           <Col md="6">
             <div className={`${createFadeInClass()}`}>
-              <p>My name is Deep Shah and I am Web developer and I am great learner.</p>
+              <p>
+                My name is Deep Shah and I am Web developer and I am great
+                learner.
+              </p>
               <p>
                 I am a currently in LDCE and pursuing Bachelor's degree in
                 Computer Engineering. I have experience in Web developement.
+              </p>
+              <p>
+                I am hard-working, very passionate about learning new skills, I
+                have positive mind set and I am great team player.
               </p>
             </div>
           </Col>

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import PortfolioApi from "../../lib/api/portfolios";
 import BasePage from "../../components/BasePage";
 import BaseLayout from "../../components/layouts/BaseLayout";
@@ -33,7 +32,11 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
 
   return (
     <BaseLayout user={data} loading={loading}>
-      <BasePage className="portfolio-page" header="Portfolios" title="Newest portfolios - Deep Shah">
+      <BasePage
+        className="portfolio-page"
+        header={!portfolios ? "Portfolios" : ""}
+        title="Newest portfolios - Deep Shah"
+      >
         <Row>
           {portfolios.map((portfolio) => (
             <Col
@@ -85,8 +88,7 @@ export const getStaticProps = async () => {
   return {
     props: {
       portfolios,
-      
     },
-    revalidate:1
+    revalidate: 1,
   };
 };
