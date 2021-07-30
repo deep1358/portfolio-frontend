@@ -8,7 +8,7 @@ import { useEffect, useRef, useState } from "react";
 const roles = ["Web Developer", "Tech Lover", "Team Player"];
 
 const Home = () => {
-  const { data, error, loading } = useGetUser();
+  const { data, loading } = useGetUser();
 
   const [isFlipping, setIsFlipping] = useState(false);
 

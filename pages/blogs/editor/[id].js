@@ -1,7 +1,6 @@
 import BaseLayout from "../../../components/layouts/BaseLayout";
 import BasePage from "../../../components/BasePage";
 import withAuth from "../../../hoc/withAuth";
-// import {Editor} from "slate-simple-editor"
 import { toast } from "react-toastify";
 import { useEffect, useState } from "react";
 import { useGetBlog, useUpdateBlog } from "../../../actions/blogs";
@@ -50,24 +49,45 @@ const BlogUpdateEditor = ({ user, loading }) => {
       <BasePage header="BlogUpdateEditor">
         {data && data.content && (
           <>
-            <input
-              value={title}
-              placeholder="Title"
-              onChange={(e) => setTitle(e.target.value)}
-            />
-            <input
-              value={subTitle}
-              placeholder="SubTitle"
-              onChange={(e) => setSubTitle(e.target.value)}
-            />
-            <textarea
-              value={content}
-              placeholder="Content"
-              onChange={(e) => setContent(e.target.value)}
-              rows="10"
-              col="10"
-            />
-            <button onClick={_updateBlog}>Update Blog</button>
+            <div className="form-group">
+              <label htmlFor="title">Title</label>
+              <input
+                name="title"
+                type="text"
+                className="form-control"
+                onChange={(e) => setTitle(e.target.value)}
+                value={title}
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="subtitle">SubTitle</label>
+              <input
+                name="subtitle"
+                type="text"
+                className="form-control"
+                onChange={(e) => setSubTitle(e.target.value)}
+                value={subTitle}
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="content">Content</label>
+              <textarea
+                name="content"
+                type="text"
+                className="form-control"
+                onChange={(e) => setContent(e.target.value)}
+                value={content}
+                rows="15"
+                cols="15"
+              />
+            </div>
+            <button
+              className="btn btn-success"
+              type="button"
+              onClick={_updateBlog}
+            >
+              Update Blog
+            </button>
           </>
         )}
       </BasePage>
