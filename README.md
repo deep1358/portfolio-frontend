@@ -1,34 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Dummy Portfolio
 
-## Getting Started
+This web app can be the ideal portfolio for any professional working in IT-related fields. 
 
-First, run the development server:
+This is the frontend portion of the website, the backend portion is located [here](https://github.com/deep1358/portfolio-backend).
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Technologies Used
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1) Next Js (Frontend)
+2) Auth0 (Authentication)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Features
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+1) Authentication System.
+2) Read about all about admin's portfolios, blogs, and many things.
+3) Admin can create, delete, and update portfolio and blogs.
+4) Visitors can see and download the admin's resume.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Visit
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[Dummy Portfolio](https://portfolio-frontend-app.vercel.app/)
