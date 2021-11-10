@@ -25,7 +25,7 @@
     "react-draft-wysiwyg": "^1.14.7",
     "react-hook-form": "^7.19.2",
     "react-resize-detector": "^6.7.6",
-    "react-toastify": "^7.0.3",
+    "react-toastify": "^8.1.0",
     "react-typed": "^1.2.0",
     "reactstrap": "^8.9.0",
     "sass": "^1.43.4",
