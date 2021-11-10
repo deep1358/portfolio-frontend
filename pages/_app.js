@@ -5,7 +5,6 @@ import "react-toastify/dist/ReactToastify.css"
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css'
 
 function MyApp({ Component, pageProps }) {
-  // console.log(process.env.AUTH0_CLIENT_SECRET);
   return <Component {...pageProps} />;
 }
 
