@@ -27,7 +27,7 @@
     "react-resize-detector": "^6.7.6",
     "react-toastify": "^7.0.3",
     "react-typed": "^1.2.0",
-    "reactstrap": "^8.9.0",
+    "reactstrap": "^9.0.0",
     "sass": "^1.43.4",
     "swr": "^1.0.1",
     "tslib": "^2.3.1"
